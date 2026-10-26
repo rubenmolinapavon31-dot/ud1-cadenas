@@ -1,0 +1,18 @@
+Algoritmo ejercicio9
+	Definir cad1, subcad Como Cadena 
+	Definir contador, i Como Entero
+	
+	
+	Escribir "Introduzca una cadena"
+	Leer cad1
+	Escribir "Introduzca una subcadena"
+	Leer subcad
+	
+	contador <- 0
+	Para i <- 0 hasta Longitud(cad1) - 1 Hacer
+		Si Subcadena(cad1, i, (i + 1)) = subcad Entonces
+		 contador <- contador + 1
+		FinSi
+	FinPara
+	Escribir "En la cadena hay " contador " subcadenas." 
+FinAlgoritmo

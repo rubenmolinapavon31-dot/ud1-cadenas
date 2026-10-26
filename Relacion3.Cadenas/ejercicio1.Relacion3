@@ -1,0 +1,13 @@
+Algoritmo ejercicio1
+	//Ejercicio para obtener los caracteres de una cadena
+	//introducida desde el teclado
+	
+	Definir entradaTeclado Como Cadena
+    Definir i Como Real
+	Escribir "Introduca una cadena de caracteres: "
+	Leer entradaTeclado
+	
+	Para i <- 0 Hasta Longitud(entradaTeclado) - 1 Hacer
+		Escribir "El caracter " i " es: " Subcadena(entradaTeclado, i, i) 
+	Fin Para
+FinAlgoritmo

@@ -1,0 +1,21 @@
+Algoritmo ejercicio7
+	definir cad,newCadad como cadena
+	definir a,b Como Caracter
+	definir i Como Entero
+	//Pedimos los datos por teclado
+	Escribir "Introduce una cadena por teclado"
+	leer cad
+	escribir "Introduce dos caracteres por teclado"
+	leer a,b
+	newCad<-""
+	//Iniciamos un bucle que recorra la cadena , y si encuentra un caracter que coincide con a lo cambia por b , si no , lo pone tal cual 
+	para i<-0 hasta longitud(chain)-1 con paso 1 Hacer
+		si subcadena(cad,i,i)==a Entonces
+			newCad<-concatenar(newCad,b)
+		SiNo
+			newCad<-concatenar(newCad,subcadena(cad,i,i))
+		FinSi
+	FinPara
+	Escribir "Se sustituyeron los caracteres que coincidian: ",newCad
+	
+FinAlgoritmo

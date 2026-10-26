@@ -1,0 +1,27 @@
+Algoritmo ejercicio5
+	Definir cad, iniciales Como Cadena
+	Definir espacio Como Caracter
+	iniciales <- ""
+	espacio <- ' '
+	Definir i, j Como Entero
+	i <- i + 1
+	
+	Escribir "Introduzca su nombre completo"
+	Leer cad
+	
+	Mientras Subcadena(cad, i, i)= espacio Hacer
+		i<- i + 1
+	Fin Mientras
+	
+	Para j <- i Hasta Longitud(cad) -1 Hacer
+		
+		Si Subcadena(cad, j - 1, j - 1) = espacio Entonces
+			
+			Mientras Subcadena(cad, j, j) = espacio Y j < Longitud(cad) Hacer
+				j <- + 1
+			Fin Mientras
+			iniciales <- Mayusculas(Concatenar(iniciales, Subcadena(cad, j, j)))
+		Fin Si
+	Fin Para
+	Escribir "Sus iniciales son: ", iniciales
+FinAlgoritmo

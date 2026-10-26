@@ -1,0 +1,35 @@
+Algoritmo ejercicio10
+	
+		Definir cad1 , cad2 , cad3 como  cadena
+		Definir i Como Entero
+		
+		Escribir "Introduce una cadena de caracteres"
+		Leer cad1
+		
+		cad1 <- Minusculas(cad1)
+		
+		//Quitar los espacios de cad1
+		cad3 <- ""
+		
+		Para i <- 0 hasta Longitud(cad1) - 1 Hacer
+			si Subcadena(cad1, i, i) <> ' ' Entonces
+				cad3 <- Concatenar(cad3, Subcadena(cad3, i, i))
+			FinSi
+		FinPara
+		
+		//Recorre cad1 desde el final al principio y va añadiendo a cad2 
+		//cada uno de los cararcteres de cad1
+		
+		cad2 <- ""
+		
+		Para i <- Longitud(cad3) - 1 Hasta 0 Con Paso -1
+			cad2 <- Concatenar(cad2, Subcadena(cad3 , i, i))
+		FinPara
+		
+		si cad3 = cad2 Entonces
+			Escribir "la cadena es un palindromo"
+		SiNo
+			Escribir "No es un palindromo"
+		FinSi
+		
+FinAlgoritmo

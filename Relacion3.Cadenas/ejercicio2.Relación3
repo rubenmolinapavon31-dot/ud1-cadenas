@@ -1,0 +1,18 @@
+Algoritmo ejercicio2
+	Definir cad, subcad, inicio Como cadena
+	Definir longitudSubcad Como Entero
+	
+	Escribir "Introduzca una cadena"
+	Leer cad
+	
+	Escribir "Introduzca una subcadena"
+	Leer subcad
+	
+	inicio <- Subcadena(cad, 0, longitud(subcad)-1)
+	
+	Si inicio == subcad  Entonces
+		Escribir "Correcto, la cadena empieza por la subcadena: " subcad
+	SiNo
+		Escribir "Incorrecto, la cadena empieza por la subcadena: " subcad
+	Fin Si
+FinAlgoritmo
